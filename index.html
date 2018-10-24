@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!--CALCULATOR FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h3 class="header__title">owl-calc</h3>
+        <img class="header__pic" src="./img/30a4a09f3393d32f1a8c368373902c26-owl-head-icon-by-vexels.png" alt="owl-logo">
+    </header>
+    <!--MAIN-CONTENT-->
+    <div class="content-container">
+    <div class="calc">
+        <div class="calc__form">
+            <input type="text" value="" class="calc__display" disabled>
+            <button class="calc__key calc__key--1" value="1">1</button>
+            <button class="calc__key calc__key--2" value="2">2</button>
+            <button class="calc__key calc__key--3" value="3">3</button>
+            <button class="calc__key calc__key--4" value="4">4</button>
+            <button class="calc__key calc__key--5" value="5">5</button>
+            <button class="calc__key calc__key--6" value="6">6</button>
+            <button class="calc__key calc__key--7" value="7">7</button>
+            <button class="calc__key calc__key--8" value="8">8</button>
+            <button class="calc__key calc__key--9" value="9">9</button>
+            <button class="calc__key calc__key--0" value="0">0</button>
+            <button class="calc__key--dot calc__key " value=".">.</button>
+            
+            <button class="calc__key--op calc__key calc__key--div " value="/">
+                    <svg class="op-icon">
+                            <use xlink:href="./img/mysprite.svg#percentage"/>
+                        </svg>
+            </button>
+            <button class="calc__key--op calc__key calc__key--add " value="+">
+                    <svg class="op-icon ">
+                            <use xlink:href="./img/mysprite.svg#plus"/>
+                        </svg>
+            </button>
+            <button class="calc__key--op calc__key calc__key--sub " value="-">
+                    <svg class="op-icon ">
+                            <use xlink:href="./img/mysprite.svg#minus"/>
+                        </svg>
+            </button>
+            <button class="calc__key--op calc__key calc__key--equal " value="=" id="sumBtn">
+                    <svg class="op-icon ">
+                            <use xlink:href="./img/mysprite.svg#equal"/>
+                        </svg>
+            </button>
+            <button class="calc__key--op calc__key calc__key--multi " value="*">
+                    <svg class="op-icon ">
+                            <use xlink:href="./img/mysprite.svg#multiply"/>
+                        </svg>
+            </button>
+        </div>
+
+    </div>
+<!--MIDDLE-SECTION-->
+    <div class="middle">
+            <button class="middle__key">
+                <svg class="middle__icon middle__start">
+                    <use xlink:href="./img/mysprite.svg#power-button-symbol"/>
+                </svg>
+            </button>
+            <button class="middle__key">
+                    <svg class="middle__icon middle__clear">
+                            <use xlink:href="./img/mysprite.svg#copyright"/>
+                        </svg>
+            </button>
+    </div>
+
+    <!--FORMULA-SECTION-->
+    <div class="formula">
+        <div class="formula__header">
+                <svg class="formula__icon">
+                        <use xlink:href="./img/mysprite.svg#formula"/>
+                    </svg>
+                    <div>FORMULA LOG</div>
+                </div>
+
+                <div class="formula__content" id="formula-box">
+
+                </div>
+
+    </div>
+
+
+</div>
+
+<!-- FOOTER SECTION-->
+    <footer class="footer">
+        <div class="footer__header">
+            <div class="footer__button">
+               <p class="footer__text">learn more</p>   
+            </div>
+        </div>
+
+
+
+        <div class="footer__contact">
+            <p class="footer__p">Contact</p>
+            <p class="footer__p">About Us</p>
+            <p class="footer__p">121 Honey Groove Ave, Owl-lane, MA</p>
+      
+        </div>
+          
+            
+        
+
+    </footer>
+
+
+
+
+    <script src="script.js"></script>  
+</body>
+</html>
